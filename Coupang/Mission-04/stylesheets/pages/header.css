@@ -1,0 +1,270 @@
+/* 헤더 */
+/* 로그인바 */
+.login-bar{
+  background-color:var(--color-gray-100);
+}
+.link{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1024px;
+  height: 34px;
+  font-size: 12px;
+  list-style: none;
+  margin: 0 auto;
+  padding:0;
+}
+.link .link-coopangplay{
+  order:1;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.link .link-marcketing{
+  order:2;
+}
+.link .link-login{
+  order: 3;
+  margin-left: auto;
+  margin-right: 8px;
+}
+.link .link-signup{
+  order: 4;
+  margin-right: 8px;
+}
+.link .link-center{
+  order: 5
+}
+
+/* 카테고리 */
+.header{
+  display: grid;
+  margin: 0 auto;
+  max-width: 1020px;
+}
+.header .button--class{
+  grid-row: 1/3;
+  padding-top: 30px;
+  background-image: url('../../assets/icon/hamburger.svg');
+  background-repeat:no-repeat;
+  background-size: 30px 30px;
+  background-position: 40px 30px;
+  border: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:110px;
+  height:116px;
+  color: var(--color-white);
+  background-color: var(--color-blue-600);
+  font-size:12px;
+  font-weight:400;
+}
+.header a{
+  grid-column: 2/3;
+}
+.header a .coupang-logo {   
+  width: 176px;
+  height:40px;
+  background-image: url('../../assets/logo/logo.svg');
+  background-size: 176px 40px;
+  margin: 34px 30px 10px 40px;
+  text-indent: -9999px;
+}
+
+.header .search-keyword select {    
+  border: none;
+  border-right:1px solid var(--color-gray-300);
+  width:135px;
+  height:38px;
+  -webkit-appearance:none;
+  padding-left:12px;
+  font-size:12px;
+  font-weight:400;
+  color:var(--color-gray-700);
+}
+.header .search-keyword select option{
+  border: 0;
+}
+.header .search-keyword .dropdown {
+  width: 9px;
+  height: 6px;
+  position: relative;
+  top: 17px;
+  right: 25px;
+  background-size: 9px 6px;
+  background-image: url('../../assets/icon/dropdown.svg');
+}
+.header .search-keyword input{
+  border: none;
+  width: 301px;
+  height: 38px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+.header .search-keyword button{
+  border: none;
+  background-color: white;
+}
+.header .search-keyword .mic{
+  margin-top: 4px;
+  margin-right: 6px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../assets/icon/mic.svg);
+}
+.header .search-keyword .search{
+  margin-top: 4px;
+  margin-right: 6px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../assets/icon/search.svg);
+}
+.header .search-keyword{
+  display: grid;
+  grid-column: 4/5;
+  grid-auto-flow: column;
+  margin-top: 34px;
+  border: 1px solid var(--color-blue-600);
+  height:40px;
+}
+.header .search-keyword input {
+  font-size: 12px; 
+  font-weight: 400; 
+  color: var(--color-gray-600);
+}
+
+.header .myCoupang{
+  grid-column: 5/6;
+}
+.header .myCoupang button{
+  padding-top: 33px;
+  margin-top: 34px;
+  border: none;
+  font-size: 12px;
+  background-color: var(--color-white);
+  background-image: url(../../assets/icon/my-coupang.svg);
+  background-position: center 4px;
+  width: 90px;
+  height: 58px;
+  margin-left:30px;
+  background-repeat: no-repeat;
+}
+.header .myCoupang ul {
+  display: none;
+  position: absolute;
+  margin-left: 10px;
+  font-size: 12px;
+  padding: 10px;
+  list-style: none;
+  border: 1px solid var(--color-gray-400);
+}
+.header .is--active > ul {
+  display: block;
+  margin-left: 30px;
+}
+.header .myCoupang ul::after {
+  position: absolute;
+  top: -6px;
+  left: 38px;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid var(--color-gray-400);
+  border-right: 1px solid var(--color-gray-400);
+  background-color: white;
+  transform: rotate(-45deg);
+}
+.header .myCoupang li{
+   font-size: 12px;
+   font-weight: 400;
+   padding: 10px;
+}
+
+
+.header .cart{
+  grid-column: 6/7;
+}
+.header .cart button{
+  position: relative;
+  padding: 0;
+  background-position: center;
+  padding-top: 38px;
+  margin-top: 34px;
+  border: 0;
+  font-size: 12px;
+  background-color: var(--color-white);
+  background-image: url(../../assets/icon/cart.svg);
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 14px;
+}
+.header .cart button::before{
+  content: "0";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  right: 0;
+  color: var(--color-white);
+  background-color: var(--color-blue-600);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+.header .cart .cart-list{
+  display: none;
+  margin-top: 20px;
+  padding-top: 50px;
+  position: absolute;
+  right: 200px;
+  width: 288px;
+  height: 144px;
+  border: 1px solid var(--color-gray-300);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--color-white);
+}
+.header .cart--empty > .cart-list {
+  display: block;
+}
+.header .cart .cart-list::before{
+  right: 20px;
+  content: '';
+  top:-6px;
+  background-color:var(--color-white);
+  border-top: 1px solid var(--color-gray-300);
+  border-right: 1px solid var(--color-gray-300);
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.header .menu{    
+  margin: 0;
+  padding: 0;
+  width: 755px;
+  margin-left: 30px;
+  grid-column: 2/6;
+}
+.header .menu li{
+  display: inline-block;
+  margin: 0 4px 6px 4px;
+  padding: 0 14px;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 400;
+}
+.header .menu .rocket,
+.header .menu .fresh{
+  margin-right: 4px;
+  margin-bottom: -2px;
+}
+.header .menu .new {
+  margin-left: 4px;
+  margin-bottom: -2px;
+}

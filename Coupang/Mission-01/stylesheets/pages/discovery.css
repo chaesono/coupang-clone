@@ -1,0 +1,120 @@
+/* CSS 작성 */
+.coupang-logo{
+  margin-bottom: 48px;
+}
+
+header{
+  width: 1020px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+header h1{
+  margin: 0;
+}
+
+.todayDiscoveryUnit {
+  width: 1020px; 
+  height: 1010px;
+  margin: 0 auto;
+}
+.todayDiscoveryUnit .today-discovery{
+  display: flex;
+  align-items : center;
+}
+.todayDiscoveryUnit .today-discovery h2 {
+  font-weight: 700;
+}
+.todayDiscoveryUnit .today-discovery h3 {
+  margin-left: 10px;
+  margin-right: 10px;
+  color:var(--color--grey-600);
+}
+.todayDiscoveryUnit .today-discovery h4{
+  font-size: 16px;
+  color:var(--color--grey-600);
+}
+
+.discovery-large:hover,
+.discovery-small:hover,
+.discovery-large:focus,
+.discovery-small:focus{
+  border: 1px solid var(--color-blue-600);
+}
+
+.discovery-large{
+  margin-bottom: 16px;
+  position: relative;
+  border: 1px solid var(--color-grey-500);
+  float: left;
+  width: 502px;
+  height: 310px;
+}
+.discovery-large:nth-child(1),
+.discovery-large:nth-child(7) {
+  margin-right: 16px;
+}
+.discovery-small:nth-child(3),
+.discovery-small:nth-child(4),
+.discovery-small:nth-child(5),
+.discovery-small:nth-child(8) {
+  margin-right: 16px;
+}
+.discovery-large .item img{
+  margin: 20px 28px;
+}
+.discovery-small{
+  margin-bottom:16px;
+  position:relative;
+  border: 1px solid var(--color-grey-500);
+  float:left;
+  width:243px;
+  height:310px;
+}
+.discovery-small .item img{
+  margin: 14px 22px 14px 21px;
+}
+.discovery-large .right-square img, 
+.discovery-small .right-square img{
+  width:42px;
+  height:42px;
+  padding:0;
+}
+.discovery-large .right-square,
+.discovery-small .right-square{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  display: flex;
+  position: absolute;
+  text-decoration: none;
+  left: 20px;
+  bottom: 20px;
+  width: 42px;
+  height: 42px;
+  top: 248px;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.discovery-large .right-square:hover, 
+.discovery-small .right-square:hover, 
+.discovery-large .right-square:focus, 
+.discovery-small .right-square:focus{
+  width: 112px;
+  right: 370px;
+  top: calc(50% - 42px/2 + 114px);
+  transition: background .5s;
+  background:var(--color-blue-600);
+}
+.discovery-large .right-square:hover::before, 
+.discovery-small .right-square:hover::before, 
+.discovery-large .right-square:focus::before, 
+.discovery-small .right-square:focus::before{
+  content:'구매하기';
+  text-decoration:none;
+  color: white;
+  padding-left:20px;
+  display:flex;
+  align-items: center;
+  text-align: center;
+}

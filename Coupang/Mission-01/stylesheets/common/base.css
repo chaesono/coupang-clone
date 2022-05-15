@@ -1,0 +1,7 @@
+/* Base 스타일 작성 */
+* {
+  font-family: 'Noto Sans Korean', sans-serif;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 24px;
+}
